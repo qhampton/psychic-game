@@ -4,9 +4,11 @@ var guessCountdiv = document.getElementById("guessCount");
 var userGuessdiv = document.getElementById("userGuess");
 var winScorediv = document.getElementById("winScore");
 var lossScorediv = document.getElementById("lossScore");
+var mainPicdiv = document.getElementById("mainPic");
+var scoreBoard = document.getElementById("scoreBoard");
 
 //set up variables using in js
-var computerChoices = ["a", "e", "i", "o", "u", "y",]
+var computerChoices = ["p", "s", "y", "c", "h", "i",]
 var guessCount = 13;
 var winScore = 0;
 var lossScore = 0;
@@ -22,7 +24,7 @@ alert("You guessed " + userGuess + "!")
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
 //if else condtions *rememder to increase scores by x and decrease guesses by y
-if ((userGuess === "a") || (userGuess === "e") || (userGuess === "i") || (userGuess === "o") || (userGuess === "u") || (userGuess === "y")) {
+if ((userGuess === "p") || (userGuess === "s") || (userGuess === "y") || (userGuess === "c") || (userGuess === "h") || (userGuess === "i")) {
      //if guessed correct: alter you're psychic, show kadabra, increase winScore
     if (userGuess === computerGuess) {
         alert("You're a psychic!");
@@ -33,9 +35,11 @@ if ((userGuess === "a") || (userGuess === "e") || (userGuess === "i") || (userGu
         else if (userGuess !== computerGuess) {
             alert("Incorrect!");
             alert("Oh no! You gave Psyduck a headache. Be careful and try again.");
+            // mainPicdiv.setAttribute("src" , "https://cdn.bulbagarden.net/upload/thumb/5/53/054Psyduck.png/1200px-054Psyduck.png");
             lossScore++;
             guessCount--;
             alert("You have " + guessCount + " guesses left!");
+            console.log (mainPic)
         }
 
         //else if guessCounter is zero: alert you've given psyduck confusion, alert he uses confusion, alert you lose, show teamrocket 
@@ -56,6 +60,7 @@ if ((userGuess === "a") || (userGuess === "e") || (userGuess === "i") || (userGu
             alert("Your Kadabra has turned into an Alakazam!");
         }
 
+
 //print score to scoreboard 
 userGuessdiv.textContent = "You're guess was " + userGuess;
 guessCountdiv.textContent = "You have " + guessCount + " guesses left.";
@@ -63,5 +68,6 @@ winScorediv.textContent = "You have won " + winScore + " times.";
 lossScorediv.textContent = "You have lost " + lossScore + " times.";
 }
 };
-        //reset button- reset score without the whole page
-        //reset game score bored to zeros
+
+//reset button- reset score without the whole page
+//reset game score bored to zeros

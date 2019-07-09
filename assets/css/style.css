@@ -9,6 +9,9 @@
 /* style of main game section*/
 
 /* stlyle of reset button*/
+input[type=submit], input[type=reset] {
+    padding:2px;
+    margin:4px 0px;
 
 /*@media queries*/
 
