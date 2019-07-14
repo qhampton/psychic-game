@@ -1,17 +1,38 @@
-/* stlye of main title*/
+body{
+    background-image: url(../images/papyrus-dark.png);
+}
+/* stlye of main area*/
+.content{
+    margin: 0 auto 0 auto;
+    /* margin-top: 100px;
+    margin-bottom: 150px;  */
+    height: auto;
+    width: 700px;
+    background-color: white;
+    text-align: center;
+}
 
+
+/*style of main title*/
+h1{
+    font-family: 'Lobster', cursive;
+}
 /* style of mini titles*/
-
+h2{
+    font-family: 'Arvo', serif;
+}
 /* style of text*/
+p{
+    font-family: 'Arvo', serif;
+}
+/* style of win/loss*/
+h3{
+    font-family: 'Bangers', cursive;
+}
 
-/* style of alerts*/
+/* style of html "alerts"*/
+.alert-stage{
+    font-family: 'Gloria Hallelujah', cursive;
+}
 
-/* style of main game section*/
-
-/* stlyle of reset button*/
-input[type=submit], input[type=reset] {
-    padding:2px;
-    margin:4px 0px;
-
-/*@media queries*/
 

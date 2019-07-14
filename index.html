@@ -2,53 +2,67 @@
 <html lang="en-us">
 
 <head>
-<meta charset="UTF-8">
-<!--link to bootstrap-->
-<!--css-->
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <meta charset="UTF-8">
+    <!--link to bootstrap-->
+    <!--css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!--link to google fonts-->
-<!-- <link href="https://fonts.googleapis.com/css?family=Arvo|Bangers|Gloria+Hallelujah|Lobster&display=swap" rel="stylesheet"> -->
-<!--link to css-->
-<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Bangers|Gloria+Hallelujah|Lobster&display=swap"
+        rel="stylesheet">
 
+    <!--link to css-->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<title>Psychic Game</title>
+    <title>Psychic Game</title>
 </head>
 
 <body>
-<!--main game area-->
-<div id="game">
-    <div id="userGuess"></div>
-    <div id="guessCount"></div>
-    <div id="winScore"></div>
-    <div id="lossScore"></div>
-</div>
-<!--link to javascript-->
-<script src="assets/javascript/game.js"></script>
-<main>
-    <!--title-->
-    <h1>Become a Psychic Pokémon© Trainer!</h1>
+    <div class="content">
+        <!--main game area-->
+        <div id="game">
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!--title-->
+                            <h1>Become a Psychic Pokémon© Trainer!</h1>
+                            <!--photo of abra-->
+                            <img src="assets/images/abra.png" alt="abra" height="500px" width="500px" id="mainPic">
+                        </div>
+                    </div>
 
-    <!--photo of abra-->
-    <img src= "assets/images/abra.png" alt= "abra" height= "500px" width="500px" id= "mainPic">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!--user instructions-->
+                            <h2 id= "title">You've encountered a wild Abra! Are you Psychic?</h2>
+                            <p>The only way to be able to train an Abra is if you have psychic abilities. Let's test and
+                                find out! We will think of a letter and you have to guess what we chose. We are going to
+                                think of only the letters in "Psychic". Simple! Since you're new, we will give you 5
+                                guesses before game over. Alright!</p>
+                            <h3>Press any letter key to get started...</h3>
+                        </div>
+                    </div>
 
-    <!--user instructions-->
-    <h2>You've encountered a wild Abra!</h2>
-    <h2>Are you Psychic?</h2>
-    <p1>The only way to be able to train an Abra is if you have psychic abilities. Let's test and find out! We will think of a letter and you have to guess what we chose. We are going to think of only the letters in "Psychic". Simple! Since you're new, we will give you 13 guesses before game over. Alright!</p1>
-    <h3>Press any key to get started</h3>
-
-    <!--score header-->
-    <h2>Score</h2>
-    <!--game variables needed on html and to be manipulated through js-->
-
-    <!--score table (2 columns and 4 rows): guesses, wins, losses-->
-
-    <!--reset button-->
-    <Button><a href="#" >Reset</a></Button>
-
-</main>
-
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!--score header-->
+                            <h2>Score</h2>
+                            <!--game variables needed on html and to be manipulated through js-->
+                            <div id="userGuess"></div>
+                            <div id="guessCount"></div>
+                            <div id="winScore"></div>
+                            <div id="lossScore"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </main>
+    </div>
+    </div>
+    <!--link to javascript-->
+    <script src="assets/javascript/game-2.js"></script>
 </body>
+
 </html>
